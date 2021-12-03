@@ -1,14 +1,9 @@
-# swissblock
-crypto tvl - marketcat - price analysis
+# Crypto ETL Pipeline
+
+An ETL Pipeline for loading (and analyzing) data from glassnode.com / defillama.com. The obtained data is/can be uploaded to a cloud hosted MongoDB backed by a free-tier AWS; Analysis using plotly 
 
 
-git clone https://github.com/glensk/swissblock.git
-
-cd swissblock
-
-open the tvl_analysis.ipynb notebook
-
-- You can use this notebook without the cloud-hosted mongoDB database -without any loss of functionality- by commening out 2 lines in the tvl_analysis.ipynb notebook (In the section Write to & read from MongoDB):
+- You can use this notebook (tvl_analysis.ipynb) without the cloud-hosted mongoDB database -without any loss of functionality- by commening out 2 lines in the tvl_analysis.ipynb notebook (In the section Write to & read from MongoDB):
   mu.write_db(dall)
   dall = mu.read_db() # resets dall dataframe
   
