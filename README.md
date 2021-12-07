@@ -13,3 +13,4 @@ requirements: (conda or pip install)
   - numpy
   - plotly
   - pymongo
+![picture alt](tvl.png "ToTal Value Locked")
